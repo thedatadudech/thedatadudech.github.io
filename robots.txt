@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://biplobsd.me
+Host: https://thedatadudech.github.io
 
 # Sitemaps
-Sitemap: https://biplobsd.me/sitemap.xml
+Sitemap: https://thedatadudech.github.io/sitemap.xml
