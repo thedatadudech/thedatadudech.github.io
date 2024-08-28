@@ -37,10 +37,10 @@ jobs:
       - name: 📥 Checkout repository PNP
         uses: actions/checkout@v3
         with:
-          repository: SpeedOut-Source/pnp
+          repository: thedatadudech/pnp
           ref: "main"
           path: "buildEnv/main"
-          token: ${{ secrets.PAT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: 🔒 Secret env pass
         run: |
           printf "\nALGOLIA_SEARCH_ADMIN_KEY=${{ secrets.ALGOLIA_SEARCH_ADMIN_KEY }}" >> buildEnv/pnp-data/.env.local
@@ -62,7 +62,7 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('buildEnv/main/**/package-lock.json', 'buildEnv/main/**/yarn.lock') }}-
       - name: 🏗️ Build
         run: |
-          cd buildEnv/main
+          cd buildEnv/main        
           npm ci
           npm run export
       - name: 🚀 Deploy
