@@ -1,73 +1,18 @@
-name: ✨ PNP Workflow
-
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
 jobs:
-  build:
+  Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: 📥 Checkout repository data
-        uses: actions/checkout@v3
-        with:
-          ref: "main"
-          fetch-depth: 0
-      - name: 🛠 Compile data for page
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
+      - name: List files in the repository
         run: |
-          pip install -r scripts/requirements.txt
-          python scripts/compileData.py
-      - name: 💾 Commit files
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add .
-          git diff --quiet && git diff --staged --quiet || git commit -m "add also new files"
-          git status
-      - name: 📤 Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          branch: "main"
-      - name: 📂 Structure directory
-        run: |
-          mkdir -p buildEnv/pnp-data
-          mv .env.local buildEnv/pnp-data/
-          rsync -av --exclude='buildEnv' * buildEnv/pnp-data/
-      - name: 📥 Checkout repository PNP
-        uses: actions/checkout@v3
-        with:
-          repository: SpeedOut-Source/pnp
-          ref: "main"
-          path: "buildEnv/main"
-          token: ${{ secrets.PAT }}
-      - name: 🔒 Secret env pass
-        run: |
-          printf "\nALGOLIA_SEARCH_ADMIN_KEY=${{ secrets.ALGOLIA_SEARCH_ADMIN_KEY }}" >> buildEnv/pnp-data/.env.local
-      - name: 🛟 Passing data
-        run: |
-          python buildEnv/pnp-data/scripts/passData.py
-      - name: 💫 Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18.16.0
-          cache: npm
-          cache-dependency-path: buildEnv/main/package-lock.json
-      - name: 🔄 Restore cache
-        uses: actions/cache@v3
-        with:
-          path: buildEnv/main/.next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('buildEnv/main/**/package-lock.json', 'buildEnv/main/**/yarn.lock') }}-${{ hashFiles('buildEnv/main/**.[jt]s', 'buildEnv/main/**.[jt]sx') }}
-          restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('buildEnv/main/**/package-lock.json', 'buildEnv/main/**/yarn.lock') }}-
-      - name: 🏗️ Build
-        run: |
-          cd buildEnv/main
-          npm ci
-          npm run export
-      - name: 🚀 Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: buildEnv/main/out
-          publish_branch: gh-pages
+          ls ${{ github.workspace }}
+      - run: echo "🍏 This job's status is ${{ job.status }}."
