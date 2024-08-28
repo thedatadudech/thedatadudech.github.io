@@ -1,0 +1,28 @@
+{
+  "techs": [
+    {
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+      "title": "Python",
+      "date": 1684507116000,
+      "category": "Programming Language",
+      "fileName": "python.md",
+      "years": 10
+    },
+    {
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg",
+      "title": "R",
+      "date": 1684507116000,
+      "category": "Programming Language",
+      "fileName": "r.md",
+      "years": 8
+    },
+    {
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png",
+      "title": "SQL",
+      "date": 1684507116000,
+      "category": "Programming Language",
+      "fileName": "sql.md",
+      "years": 12
+    }
+  ]
+}

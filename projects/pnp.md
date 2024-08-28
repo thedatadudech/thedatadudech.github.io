@@ -3,7 +3,7 @@ appName: PNP
 appLogo: https://biplobsd.github.io/images/logos/github-profile-dark.png
 companyName: SpeedOut Source
 companyLogo: https://biplobsd.github.io/images/logos/github-profile-dark.png
-date: 1680541759736
+date: 10541759736
 readTime: 2
 imgUrl: https://raw.githubusercontent.com/SpeedOut-Source/pnp-data/main/images/all-devices-black-pnp.png
 whatText: Portfolio NextJS Project
@@ -18,17 +18,12 @@ result: This website free and open-source, no hosting fee required, build with N
 
 ## Overview
 
-The "Portfolio NextJS Project" is a showcase of a personal portfolio website developed using Next.js, Tailwind CSS, and daisyUI. The project aims to provide an intuitive and visually appealing platform to showcase an individual's skills, projects, and achievements. It leverages various technologies and services to enhance the user experience and functionality.
+The "Portfolio NextJS Project" is a showcase of a personal portfolio website developed using Next.js, Ta
 
 ## Features
 
 - Next.js, TailwindCSS, daisyUI
 - .me domain free 1 year, if you are student
-- Github static page hosting
-- Data and Project code sparest repository
-- Algolia search, Google map Integrate
-- Giscus comment, reaction system
-- Open source
 
 ## Team
 
@@ -42,5 +37,3 @@ The "Portfolio NextJS Project" demonstrates the effective use of Next.js, Tailwi
 
 - Install now : [biplobsd.me/blogs/get-started.md](https:?/biplobsd.me/blogs/get-started.md)
 - Pricing : [biplobsd.me/pricing](https://biplobsd.me/pricing)
-- PNP Source : [SpeedOut-Source/pnp](https://github.com/SpeedOut-Source/pnp)
-- Twitter : [twitter.com/biplobsd11](https://twitter.com/biplobsd11)
