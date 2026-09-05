@@ -26,7 +26,7 @@ flagship project, not the subject.
 | `projects` | Thawr featured; six further projects with GitHub links and a theme label each. |
 | `background` | Career, education, expertise, awards, origin. Employer in Dhahran is not named. |
 | `publications` | Two peer-reviewed articles (DOI where verified) and the working papers, each with a verified link. |
-| `contact` | GitHub, LinkedIn placeholder, email placeholder. |
+| `contact` | GitHub, LinkedIn, email placeholder. |
 
 ## Tone
 
@@ -57,7 +57,6 @@ no custom domain.
 
 Marked as `TODO(2026-09-05)` in `site/index.html`:
 
-- LinkedIn profile URL
 - public email address
 - RePEc author page URL
 - DOI for Clauss and Schnabel (2008), if one exists

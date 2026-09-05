@@ -28,10 +28,9 @@ Push to `main` and the workflow deploys. The Pages source is the
 
 ## Placeholders
 
-Three items are deliberately left open and marked with `TODO(2026-09-05)`
+Two items are deliberately left open and marked with `TODO(2026-09-05)`
 comments in `site/index.html`:
 
-- LinkedIn profile URL (contact section)
 - public email address (contact section)
 - RePEc author page URL (publications section)
 
