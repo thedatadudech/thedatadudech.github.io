@@ -23,7 +23,7 @@ flagship project, not the subject.
 | --- | --- |
 | `top` | Name, one-line positioning, Dhahran, four key facts. |
 | `how-i-work` | Spec-driven development: vision, architecture, ADRs, threat model, acceptance tests are the source of truth. The loop. Why project names come from the Sira. |
-| `projects` | Thawr featured; six further projects with GitHub links and a theme label each. |
+| `projects` | Thawr featured; five further projects with GitHub links and a theme label each. |
 | `background` | Career, education, expertise, awards, origin. Employer in Dhahran is not named. |
 | `publications` | Two peer-reviewed articles (DOI where verified) and the working papers, each with a verified link. |
 | `contact` | GitHub, LinkedIn, email placeholder. |
