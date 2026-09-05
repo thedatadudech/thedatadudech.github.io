@@ -1,6 +1,6 @@
 # Site spec
 
-This document is the source of truth for <https://thedatadudech.github.io>.
+This document is the source of truth for <https://www.thedatadude.de>.
 Change it first, then the page.
 
 ## Purpose
@@ -50,8 +50,9 @@ name for the current role.
 
 GitHub Pages serves the `gh-pages` branch. The workflow in
 `.github/workflows/deploy.yml` runs the checks on every push to `main` and
-publishes `site/` to `gh-pages` as an orphan commit. No CNAME: the site has
-no custom domain.
+publishes `site/` to `gh-pages` as an orphan commit. `site/CNAME` holds the
+custom domain `www.thedatadude.de`; DNS has a CNAME record for `www` pointing
+at `thedatadudech.github.io`, and GitHub redirects the github.io address to it.
 
 ## Open placeholders
 

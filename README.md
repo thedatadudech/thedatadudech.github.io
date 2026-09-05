@@ -1,7 +1,7 @@
 # thedatadudech.github.io
 
 Personal website of Dr. Markus Clauss (Abdullah Isa), served by GitHub
-Pages at <https://thedatadudech.github.io>.
+Pages at <https://www.thedatadude.de> (also reachable as thedatadudech.github.io).
 
 Plain HTML and CSS with a small theme-toggle script. No build step, no
 framework, no trackers, no external fonts.
@@ -10,7 +10,7 @@ framework, no trackers, no external fonts.
 
 | Path | Purpose |
 | --- | --- |
-| `site/` | The published site. `index.html` is the whole page; `404.html`, `robots.txt`, `sitemap.xml` and `.nojekyll` sit next to it. |
+| `site/` | The published site. `index.html` is the whole page; `404.html`, `robots.txt`, `sitemap.xml`, `CNAME` and `.nojekyll` sit next to it. |
 | `site/assets/` | Stylesheet, theme script, SVG favicon and the Thawr mark. |
 | `scripts/check_site.py` | Acceptance checks: local links and assets resolve, nothing is loaded from third parties, required sections exist. |
 | `docs/SITE.md` | Content and design spec for the site, including open placeholders. |
@@ -24,7 +24,9 @@ python3 -m http.server -d site 8000    # preview at http://localhost:8000
 ```
 
 Push to `main` and the workflow deploys. The Pages source is the
-`gh-pages` branch, as it was before the rebuild; there is no custom domain.
+`gh-pages` branch, as it was before the rebuild. `site/CNAME` sets the custom
+domain `www.thedatadude.de`; keep the file or GitHub drops the domain on the
+next deploy.
 
 ## Placeholders
 
