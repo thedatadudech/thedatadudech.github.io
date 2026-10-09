@@ -24,7 +24,7 @@ flagship, not the subject. Since October 2026 the projects live at Sira Labs
 | --- | --- |
 | `top` | Name, one-line positioning, Dhahran, four key facts. |
 | `how-i-work` | Spec-driven development: vision, architecture, ADRs, threat model, acceptance tests are the source of truth. The loop. Why project names come from the Sira. |
-| `projects` | Sira Labs: the six projects in three tracks (Learning, Data, Security) with status, links and the Sira meaning, in the same order and wording as siralabs.org and the Sira-Labs organisation profile. Older personal repositories follow as a short "Earlier work" list. |
+| `projects` | Sira Labs: the seven projects in three tracks (Learning, Data, Security) with status, links and the Sira meaning, in the same order and wording as siralabs.org and the Sira-Labs organisation profile. ʿArḍa is listed here ahead of siralabs.org, as an early build, with wording from its README. Older personal repositories follow as a short "Earlier work" list. |
 | `background` | Career, education, expertise, awards, origin. Employer in Dhahran is not named. |
 | `publications` | Two peer-reviewed articles (DOI where verified) and the working papers, each with a verified link. |
 | `contact` | GitHub, LinkedIn, email placeholder. |
