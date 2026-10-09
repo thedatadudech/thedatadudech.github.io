@@ -8,7 +8,8 @@ Change it first, then the page.
 Present Markus Clauss as an AI expert who leads AI and data science work in
 the energy sector in Dhahran and who builds software with AI coding agents
 from written specifications. The site is about the person; Thawr is the
-flagship project, not the subject.
+flagship, not the subject. Since October 2026 the projects live at Sira Labs
+(<https://siralabs.org>); when a project changes status there, update its card here.
 
 ## Themes, in order
 
@@ -23,7 +24,7 @@ flagship project, not the subject.
 | --- | --- |
 | `top` | Name, one-line positioning, Dhahran, four key facts. |
 | `how-i-work` | Spec-driven development: vision, architecture, ADRs, threat model, acceptance tests are the source of truth. The loop. Why project names come from the Sira. |
-| `projects` | Thawr featured; five further projects with GitHub links and a theme label each. |
+| `projects` | Sira Labs: the six projects in three tracks (Learning, Data, Security) with status, links and the Sira meaning, in the same order and wording as siralabs.org and the Sira-Labs organisation profile. Older personal repositories follow as a short "Earlier work" list. |
 | `background` | Career, education, expertise, awards, origin. Employer in Dhahran is not named. |
 | `publications` | Two peer-reviewed articles (DOI where verified) and the working papers, each with a verified link. |
 | `contact` | GitHub, LinkedIn, email placeholder. |
@@ -37,7 +38,7 @@ name for the current role.
 
 ## Design
 
-- Palette from Thawr: navy `#0b2233`, blues `#1d4f7a` to `#4fc3c8`, teal `#3fb8c4`.
+- Palette from Thawr (now a Sira Labs project): navy `#0b2233`, blues `#1d4f7a` to `#4fc3c8`, teal `#3fb8c4`.
 - Light and dark mode. Default follows `prefers-color-scheme`; the toggle
   stores an explicit choice in `localStorage` and sets `data-theme` on
   `<html>`. Without JavaScript the site still renders in both modes.

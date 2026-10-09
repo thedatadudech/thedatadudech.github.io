@@ -679,6 +679,78 @@ code {
   padding-top: 0.5rem;
 }
 
+.lab-links {
+  margin: 0 0 2.5rem;
+}
+
+.track {
+  margin-bottom: 2.5rem;
+}
+
+.track-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.25rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.track-head h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.track-head p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.97rem;
+}
+
+.track .project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+}
+
+.project h3 span[lang="ar"] {
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.project .status {
+  align-self: flex-start;
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  color: var(--text-muted);
+}
+
+.project .status.preview {
+  border-color: var(--teal);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.project .card-links {
+  margin-top: 0.25rem;
+  font-size: 0.92rem;
+}
+
+.earlier {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  max-width: var(--measure);
+}
+
+.earlier li {
+  margin-bottom: 0.4rem;
+}
+
 /* ---------- background ---------- */
 
 .timeline {

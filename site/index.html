@@ -29,6 +29,7 @@
     "jobTitle": "AI & Data Science Lead",
     "url": "https://www.thedatadude.de/",
     "sameAs": ["https://github.com/thedatadudech", "https://www.linkedin.com/in/markus-clauss"],
+    "memberOf": { "@type": "Organization", "name": "Sira Labs", "url": "https://siralabs.org" },
     "address": { "@type": "PostalAddress", "addressLocality": "Dhahran", "addressCountry": "SA" },
     "nationality": "German",
     "alumniOf": [
@@ -75,6 +76,7 @@
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#projects">See the projects</a>
+          <a class="btn" href="https://siralabs.org" rel="noopener">Sira Labs</a>
           <a class="btn" href="https://github.com/thedatadudech" rel="me noopener">GitHub</a>
         </div>
         <ul class="hero-facts" aria-label="Key facts">
@@ -110,15 +112,15 @@
           <ol class="loop" aria-label="The working loop">
             <li><strong>Write the spec</strong><p>Vision, architecture, ADRs, threat model and acceptance tests, in the repo next to the code.</p></li>
             <li><strong>Hand it to the agent</strong><p>Claude Code implements one spec at a time. I read the diff the way I would read a colleague's.</p></li>
-            <li><strong>Run it for real</strong><p>Release candidates go on a VPS, a Mac and a phone. The acceptance tests decide, not the demo.</p></li>
+            <li><strong>Run it for real</strong><p>Previews run on our own servers; Thawr's release candidates run on a VPS, a Mac and a phone. The acceptance tests decide, not the demo.</p></li>
             <li><strong>Fold it back</strong><p>What the running system teaches goes into the documents first. The spec changes before the code does.</p></li>
           </ol>
         </div>
 
         <div class="naming">
           <h3>Why the names come from the Sira</h3>
-          <p>My projects take their names from moments in the Sira, the life of the Prophet Muhammad ﷺ. Each name is chosen because that moment explains what the software is for. Thawr is the cave that gave shelter during the Hijra, so Thawr is a network that shelters. The names are meaning, not decoration.</p>
-          <p>I am at home in the Kingdom of Saudi Arabia now, and I am learning Arabic. Some of the smaller tools here exist because of that.</p>
+          <p>The Sira Labs projects take their names from moments in the Sira, the life of the Prophet Muhammad ﷺ. Each name is chosen because that moment explains what the software is for. Thawr is the cave that gave shelter during the Hijra, so Thawr is a network that shelters. Tabayyun is the command to verify a report before acting on it, so Tabayyun verifies data. The names are meaning, not decoration.</p>
+          <p>I am at home in the Kingdom of Saudi Arabia now, and I am learning Arabic. Suffa exists because of that.</p>
         </div>
       </div>
     </section>
@@ -128,68 +130,116 @@
       <div class="container">
         <div class="section-head">
           <p class="kicker">Projects</p>
-          <h2>Built spec by spec, with agents</h2>
+          <h2>Sira Labs: software you own, built in the open</h2>
+        </div>
+        <p class="lead">My open-source work now lives at <a href="https://siralabs.org" rel="noopener">Sira Labs</a>. Six self-hostable projects in three tracks, each written from specs and decision records before any code, built with AI coding agents, and named for a moment of the Sīra that says what it is for.</p>
+        <div class="card-links lab-links">
+          <a href="https://siralabs.org" rel="noopener">siralabs.org</a>
+          <a href="https://github.com/Sira-Labs" rel="noopener">Sira Labs on GitHub</a>
         </div>
 
-        <article class="featured" aria-labelledby="thawr-title">
-          <div class="featured-visual">
-            <img src="assets/img/thawr-mark.svg" width="320" height="200" alt="Thawr mark: a stylised cave arch in navy and teal">
-            <p class="tagline">One binary. No cloud. Works offline.</p>
-            <ul class="tags" aria-label="Technologies">
-              <li>Go</li><li>WireGuard</li><li>mesh VPN</li><li>ZTNA</li><li>SQLite</li><li>Apache-2.0</li><li>Claude Code</li>
-            </ul>
+        <div class="track">
+          <div class="track-head">
+            <h3>Learning</h3>
+            <p>Learn together: with your teacher, your class and your own sources.</p>
           </div>
-          <div>
-            <h3 id="thawr-title">Thawr <span lang="ar">ثور</span></h3>
-            <p>A self-hosted WireGuard mesh VPN and zero-trust network, written in Go. One binary runs as the control server, as the client on every device and as the admin CLI. State is a single SQLite directory. Policy is a YAML file kept in git, default deny. Phones join through the official WireGuard app. Nothing phones home, and it starts and runs with no internet access.</p>
-            <p class="meaning">Named after the cave near Makkah where the Prophet ﷺ and Abu Bakr found shelter during the Hijra: hidden, protected, reachable only by those who belong. That is the design goal of the network.</p>
-            <p>Thawr is built spec by spec with Claude Code. The design documents, from vision to threat model and acceptance tests, live in the repository, and the implementation follows them one at a time. Release candidates run on a VPS, a Mac and a phone.</p>
+          <div class="project-grid">
+          <article class="project">
+            <p class="status preview">Preview</p>
+            <h3>Suffa <span lang="ar">الصُّفَّة</span></h3>
+            <p>Offline-first Arabic learning for Modern Standard Arabic, with your teacher, your class and an AI tutor around one curriculum.</p>
+            <p class="meaning">The platform in the Prophet's ﷺ mosque where people lived and learned.</p>
+            <ul class="tags" aria-label="Technologies"><li>PWA</li><li>offline-first</li><li>AI tutor</li></ul>
             <div class="card-links">
-              <a href="https://github.com/thedatadudech/Thawr" rel="noopener">Source on GitHub</a>
-              <a href="https://github.com/thedatadudech/Thawr/tree/main/docs" rel="noopener">Specs and design documents</a>
+              <a href="https://suffa.siralabs.org" rel="noopener">Open Suffa</a>
+              <a href="https://github.com/Sira-Labs/Suffa" rel="noopener">GitHub</a>
             </div>
+          </article>
+          <article class="project">
+            <p class="status preview">Preview</p>
+            <h3>Arqam <span lang="ar">أرقم</span></h3>
+            <p>One connected journey to becoming an AI-native AI engineer, data scientist or AI researcher, built from openly licensed material.</p>
+            <p class="meaning">Dār al-Arqam, the house where the first Muslims learned together.</p>
+            <ul class="tags" aria-label="Technologies"><li>curriculum</li><li>AI engineering</li><li>learning ledger</li></ul>
+            <div class="card-links">
+              <a href="https://arqam-stg.siralabs.org" rel="noopener">Open Arqam</a>
+              <a href="https://siralabs.org/arqam/" rel="noopener">About Arqam</a>
+            </div>
+          </article>
           </div>
-        </article>
-
-        <div class="project-grid">
-          <article class="project">
-            <p class="theme">AI agents &amp; LLM systems</p>
-            <h3><a href="https://github.com/thedatadudech/news-recap-app" rel="noopener">news-recap-app</a></h3>
-            <p>AI News Recap: agents gather the day's topics, summarise them and turn the summary into a short video from generated images.</p>
-            <p class="meaning">Second place, Encode Club / SwarmZero AI and Video Hackathon, December 2024.</p>
-            <ul class="tags" aria-label="Technologies"><li>multi-agent</li><li>Python</li><li>Next.js</li></ul>
-          </article>
-
-          <article class="project">
-            <p class="theme">Building with AI</p>
-            <h3><a href="https://github.com/thedatadudech/arabictutor" rel="noopener">arabictutor</a></h3>
-            <p>Small tools for my own Arabic learning, built with agents as I go. A place to try ideas quickly and keep what helps.</p>
-            <p class="meaning">Learning the language of my new home, one tool at a time.</p>
-            <ul class="tags" aria-label="Technologies"><li>Arabic</li><li>LLM</li><li>learning</li></ul>
-          </article>
-
-
-          <article class="project">
-            <p class="theme">AI research &amp; evaluation</p>
-            <h3><a href="https://github.com/thedatadudech/cache-implementation-challenge" rel="noopener">cache-implementation-challenge</a></h3>
-            <p>Claude, Qwen and GLM-4.5 get the same specification and write the same Rust cache: LRU eviction, TTL, thread safety. The implementations are benchmarked side by side.</p>
-            <ul class="tags" aria-label="Technologies"><li>Rust</li><li>LLM evaluation</li><li>benchmarks</li></ul>
-          </article>
-
-          <article class="project">
-            <p class="theme">AI research &amp; evaluation</p>
-            <h3><a href="https://github.com/thedatadudech/apertus-transparency-guide" rel="noopener">apertus-transparency-guide</a></h3>
-            <p>A transparency dashboard for Apertus, Switzerland's open 8B language model: attention patterns, weights and next-token probabilities, inspected live.</p>
-            <ul class="tags" aria-label="Technologies"><li>Apertus</li><li>Gradio</li><li>PyTorch</li></ul>
-          </article>
-
-          <article class="project">
-            <p class="theme">ML &amp; data science</p>
-            <h3><a href="https://github.com/thedatadudech/gradio-medical-image-analyzer" rel="noopener">gradio-medical-image-analyzer</a></h3>
-            <p>A Gradio custom component for veterinary medical image analysis with DICOM support, built so that AI agents can drive it.</p>
-            <ul class="tags" aria-label="Technologies"><li>computer vision</li><li>DICOM</li><li>Gradio</li></ul>
-          </article>
         </div>
+
+        <div class="track">
+          <div class="track-head">
+            <h3>Data</h3>
+            <p>Verify data before anyone acts on it, and explain what was found.</p>
+          </div>
+          <div class="project-grid">
+          <article class="project">
+            <p class="status preview">Preview</p>
+            <h3>Tabayyun <span lang="ar">تبيّن</span></h3>
+            <p>Verifies industrial time series before anyone acts on them: a catalogue of statistical and domain checks, a score per series and an explanation for every finding. Energy first: PV, wind, grid, metering and storage.</p>
+            <p class="meaning">To verify a report before acting on it.</p>
+            <ul class="tags" aria-label="Technologies"><li>Rust</li><li>Python</li><li>time series</li></ul>
+            <div class="card-links">
+              <a href="https://tabayyun-stg.siralabs.org" rel="noopener">Open Tabayyun</a>
+              <a href="https://github.com/Sira-Labs/Tabayyun" rel="noopener">GitHub</a>
+            </div>
+          </article>
+          <article class="project">
+            <p class="status preview">Preview</p>
+            <h3>Sahifa <span lang="ar">صحيفة</span></h3>
+            <p>Assesses whole data stores: profiles every table, scores six quality dimensions mapped to ISO/IEC 25012 with how sure each score is, and explains every finding. It never writes to the data it assesses.</p>
+            <p class="meaning">The charter of Medina, which set down in writing what each party could expect of the others.</p>
+            <ul class="tags" aria-label="Technologies"><li>data quality</li><li>data contracts</li><li>ISO/IEC 25012</li></ul>
+            <div class="card-links">
+              <a href="https://sahifa-stg.siralabs.org" rel="noopener">Open Sahifa</a>
+              <a href="https://siralabs.org/sahifa/" rel="noopener">About Sahifa</a>
+              <a href="https://github.com/Sira-Labs/Sahifa" rel="noopener">GitHub</a>
+            </div>
+          </article>
+          </div>
+        </div>
+
+        <div class="track">
+          <div class="track-head">
+            <h3>Security</h3>
+            <p>Protect what is yours, and test it the way an attacker would.</p>
+          </div>
+          <div class="project-grid">
+          <article class="project">
+            <p class="status">Release candidate</p>
+            <h3>Thawr <span lang="ar">ثور</span></h3>
+            <p>A self-hosted WireGuard mesh VPN and zero-trust network in one Go binary. Default-deny policy in git, NAT traversal with a built-in relay, phones via QR code. No cloud, and it keeps working offline.</p>
+            <p class="meaning">The cave of the Hijra: hidden, protected, reachable only by those who belong.</p>
+            <ul class="tags" aria-label="Technologies"><li>Go</li><li>WireGuard</li><li>ZTNA</li></ul>
+            <div class="card-links">
+              <a href="https://siralabs.org/thawr/" rel="noopener">About Thawr</a>
+              <a href="https://github.com/Sira-Labs/Thawr" rel="noopener">GitHub</a>
+            </div>
+          </article>
+          <article class="project">
+            <p class="status">Design</p>
+            <h3>Khandaq <span lang="ar">الخندق</span></h3>
+            <p>A command post for authorised AI red teaming: the maintained open-source tools under one scope, one tamper-evident chain of evidence, and reports mapped to MITRE ATLAS and the OWASP LLM and Agentic Top 10.</p>
+            <p class="meaning">The trench dug around Medina on Salmān al-Fārisī's counsel: attacker thinking in the service of defence.</p>
+            <ul class="tags" aria-label="Technologies"><li>AI red teaming</li><li>MITRE ATLAS</li><li>OWASP</li></ul>
+            <div class="card-links">
+              <a href="https://khandaq-stg.siralabs.org" rel="noopener">Open Khandaq</a>
+              <a href="https://siralabs.org/khandaq/" rel="noopener">About Khandaq</a>
+              <a href="https://github.com/Sira-Labs/Khandaq" rel="noopener">GitHub</a>
+            </div>
+          </article>
+          </div>
+        </div>
+
+        <h3 class="subhead">Earlier work</h3>
+        <ul class="earlier">
+          <li><a href="https://github.com/thedatadudech/news-recap-app" rel="noopener">news-recap-app</a>: agents gather the day's news and turn it into a short video. Second place, Encode Club / SwarmZero AI and Video Hackathon, December 2024.</li>
+          <li><a href="https://github.com/thedatadudech/cache-implementation-challenge" rel="noopener">cache-implementation-challenge</a>: Claude, Qwen and GLM-4.5 write the same Rust cache from one specification, benchmarked side by side.</li>
+          <li><a href="https://github.com/thedatadudech/apertus-transparency-guide" rel="noopener">apertus-transparency-guide</a>: a transparency dashboard for Apertus, Switzerland's open 8B language model.</li>
+          <li><a href="https://github.com/thedatadudech/gradio-medical-image-analyzer" rel="noopener">gradio-medical-image-analyzer</a>: a Gradio component for veterinary medical image analysis with DICOM support.</li>
+        </ul>
       </div>
     </section>
 
@@ -311,7 +361,7 @@
           <p class="kicker">Contact</p>
           <h2>Get in touch</h2>
         </div>
-        <p class="lead">Interested in AI agents in regulated or air-gapped environments, spec-driven development, or Thawr? Write to me.</p>
+        <p class="lead">Interested in AI agents in regulated or air-gapped environments, spec-driven development, or Sira Labs? Write to me.</p>
         <ul class="contact-list">
           <li>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 8.36 22.9c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.13v3.16c0 .31.2.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
